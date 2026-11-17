@@ -19,9 +19,13 @@ public class GameManager : MonoBehaviour
     public float maxSpeed = 28f;
     public float acceleration = 0.25f;      // ganho de velocidade por segundo
 
+    [Header("Moedas")]
+    public int coinBonus = 10;              // pontos (metros) por moeda
+
     public GameState State { get; private set; } = GameState.Menu;
     public float Speed { get; private set; }
     public float Score { get; private set; }
+    public int Coins { get; private set; }
     public bool IsPlaying => State == GameState.Playing;
 
     static bool skipMenu;                   // depois de reiniciar, comeca direto
@@ -64,6 +68,13 @@ public class GameManager : MonoBehaviour
         player.StartRun();
     }
 
+    public void AddCoin(int value)
+    {
+        if (State != GameState.Playing) return;
+        Coins += value;
+        Score += coinBonus * value;
+    }
+
     public void PlayerHit()
     {
         if (State != GameState.Playing) return;
@@ -102,6 +113,7 @@ public class GameManager : MonoBehaviour
         if (State == GameState.Playing)
         {
             GUI.Label(new Rect(0, 10, w, fs * 2), (int)Score + " m", label);
+            GUI.Label(new Rect(0, 10 + fs * 1.6f, w, fs * 2), "Moedas: " + Coins, label);
         }
         else if (State == GameState.Menu)
         {
@@ -111,9 +123,10 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GUI.Label(new Rect(0, h * 0.2f, w, fs * 3), "Game Over", title);
-            GUI.Label(new Rect(0, h * 0.4f, w, fs * 3), (int)Score + " m\nRecorde: " + best + " m", label);
-            if (GUI.Button(new Rect((w - bw) / 2, h * 0.6f, bw, bh), "Jogar de novo (Enter)", button)) Restart();
+            GUI.Label(new Rect(0, h * 0.15f, w, fs * 3), "Game Over", title);
+            GUI.Label(new Rect(0, h * 0.35f, w, fs * 4),
+                (int)Score + " m\nMoedas: " + Coins + "\nRecorde: " + best + " m", label);
+            if (GUI.Button(new Rect((w - bw) / 2, h * 0.65f, bw, bh), "Jogar de novo (Enter)", button)) Restart();
         }
     }
 }
