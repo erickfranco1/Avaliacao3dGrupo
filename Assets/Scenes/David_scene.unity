@@ -323,13 +323,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2.46
-  m_Radius: 0.39
+  m_Height: 1.64
+  m_Radius: 0.52
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.99, z: 0}
 --- !u!114 &492331152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   gravity: -28
   fastFallSpeed: -20
   slideDuration: 0.8
-  slideHeightRatio: 0.5
+  slideHeightRatio: 0.564
 --- !u!1 &1108352144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1643,7 @@ Transform:
   m_GameObject: {fileID: 4362937645945178135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
