@@ -13,7 +13,7 @@ public class RigTargets : MonoBehaviour
     public Transform headTarget;
     public float lookDistance = 14f;
     public float headTargetSmooth = 8f;
-    
+
     public Vector3 restPoint = new Vector3(0f, 1.6f, 8f);
 
     void Awake()
@@ -27,7 +27,7 @@ public class RigTargets : MonoBehaviour
         UpdateHeadTarget();
     }
 
-    // O rig so vale durante a corrida. No flip, no slide e na morte o peso vai a 0 suavemente.
+    // o rig so vale durante a corrida. no pulo, no slide e na morte o peso vai a 0 
     void UpdateRigWeight()
     {
         if (rig == null || animator == null) return;
@@ -38,7 +38,7 @@ public class RigTargets : MonoBehaviour
         rig.weight = Mathf.MoveTowards(rig.weight, running ? 1f : 0f, rigFadeSpeed * Time.deltaTime);
     }
 
-    // Move o alvo da cabeca para a moeda mais proxima, ou para a frente se nao houver nenhuma
+    // move o alvo da cabeca para a moeda mais proxima, ou para a frente se nao tiver nenhuma
     void UpdateHeadTarget()
     {
         if (headTarget == null) return;
