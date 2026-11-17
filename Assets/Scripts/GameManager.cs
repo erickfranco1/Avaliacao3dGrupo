@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
         {
             GUI.Label(new Rect(0, h * 0.2f, w, fs * 3), gameTitle, title);
             GUI.Label(new Rect(0, h * 0.4f, w, fs * 2), "Recorde: " + best + " m", label);
-            if (GUI.Button(new Rect((w - bw) / 2, h * 0.55f, bw, bh), "Jogar (Enter)", button)) StartGame();
+            if (GUI.Button(new Rect((w - bw) / 2, h * 0.55f, bw, bh), "Jogar (Clicar ou Enter)", button)) StartGame();
         }
         else
         {
