@@ -526,6 +526,11 @@ MonoBehaviour:
   fastFallSpeed: -20
   slideDuration: 0.8
   slideHeightRatio: 0.5
+--- !u!95 &492331153 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5305454414818905451, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
+  m_PrefabInstance: {fileID: 2920437547966350780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &492331154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2252062024696780561, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
@@ -626,6 +631,26 @@ MonoBehaviour:
   - m_Rig: {fileID: 1483463732}
     m_Active: 1
   m_Effectors: []
+--- !u!114 &492331157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492331148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d99a7e8ff0176f4f85247e29446fed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RigTargets
+  rig: {fileID: 1483463732}
+  animator: {fileID: 492331153}
+  runStateName: FloweryRun
+  rigFadeSpeed: 6
+  headTarget: {fileID: 942738883}
+  lookDistance: 14
+  headTargetSmooth: 8
+  restPoint: {x: 0, y: 1.6, z: 8}
 --- !u!4 &497693922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4703669233015488596, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
@@ -1336,6 +1361,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1444317195831250347, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 492331156}
+    - targetCorrespondingSourceObject: {fileID: 1444317195831250347, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 492331157}
   m_SourcePrefab: {fileID: 100100000, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
