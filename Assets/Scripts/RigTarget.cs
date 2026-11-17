@@ -1,22 +1,19 @@
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-// Controla os alvos e o peso do Rig. Fica no objeto raiz do personagem
-// (o mesmo que tem o Animator e o Rig Builder).
 public class RigTargets : MonoBehaviour
 {
     [Header("Rig")]
-    public Rig rig;                         // o objeto filho "Rig"
-    public Animator animator;               // se vazio, busca sozinho
-    [Tooltip("Nome do estado de corrida no Animator. O rig so atua nele.")]
+    public Rig rig;
+    public Animator animator;
     public string runStateName = "FloweryRun";
     public float rigFadeSpeed = 6f;
 
     [Header("Cabeca")]
-    public Transform headTarget;            // alvo do Multi-Aim
-    public float lookDistance = 14f;        // so olha para moedas ate essa distancia
+    public Transform headTarget;
+    public float lookDistance = 14f;
     public float headTargetSmooth = 8f;
-    [Tooltip("Para onde olha quando nao ha moeda (relativo ao personagem).")]
+    
     public Vector3 restPoint = new Vector3(0f, 1.6f, 8f);
 
     void Awake()
