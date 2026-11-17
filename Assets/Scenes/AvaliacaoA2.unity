@@ -354,6 +354,25 @@ MonoBehaviour:
   fastFallSpeed: -20
   slideDuration: 0.8
   slideHeightRatio: 0.5
+--- !u!114 &492331153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492331148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Animation.Rigging::UnityEngine.Animations.Rigging.BoneRenderer
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms: []
 --- !u!1 &1108352144
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +727,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1444317195831250347, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 492331152}
+    - targetCorrespondingSourceObject: {fileID: 1444317195831250347, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 492331153}
   m_SourcePrefab: {fileID: 100100000, guid: 8342954f3fceab34db181f6271ce449e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
