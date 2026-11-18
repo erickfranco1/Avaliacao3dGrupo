@@ -714,14 +714,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3770859898040362126, guid: 286dbe1c559ed3c4e95d3b27e6759944, type: 3}
-      propertyPath: m_RigLayers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3770859898040362126, guid: 286dbe1c559ed3c4e95d3b27e6759944, type: 3}
-      propertyPath: m_RigLayers.Array.data[1].m_Rig
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6184246220041887607, guid: 286dbe1c559ed3c4e95d3b27e6759944, type: 3}
       propertyPath: m_Name
       value: AtomicPlayer
