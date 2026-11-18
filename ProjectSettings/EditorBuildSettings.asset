@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AvaliacaoA2.unity
     guid: 99500a52b8eaa4d4e91dce69c68ffd9d
+  - enabled: 1
+    path: Assets/Scenes/David_scene.unity
+    guid: 99e30ba7201252b40b89dcdf2bf922ff
+  - enabled: 1
+    path: Assets/Scenes/CenaErick.unity
+    guid: 9b7fcaa32ae2a1f4580ded7c1e6d2b69
+  - enabled: 1
+    path: Assets/Scenes/Feldhaus.unity
+    guid: f5420b8adafdf5544bceaf7260eb82ac
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelect.unity
+    guid: 4d8f8c0f24885da4fb41bb3e109b8b45
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
